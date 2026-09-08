@@ -1,0 +1,9 @@
+from gtts import gTTS
+import os
+
+text = "Oombi mario selva kumar"
+
+tts =gTTS(text=text,lang='en',slow=True)
+
+tts.save("voice.mp3")
+print("Audio Converted Successfully!")
